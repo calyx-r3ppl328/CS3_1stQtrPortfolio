@@ -10,5 +10,5 @@ numPerDay = 1;
 let totalRequired;
 totalRequired = (numPerDay * 365) * (maxAge - age);
 
-let result = "You will need " + totalRequired + " cups of boba tea to last you until the ripe old age of " + maxAge + ".";
+let outputDisplay = "You will need " + totalRequired + " cups of boba tea to last you until the ripe old age of " + maxAge + ".";
 document.write(result)
