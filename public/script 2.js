@@ -1,14 +1,16 @@
-let age;
-age = 14;
+let sure = window.confirm("Sure of your numbers?");
 
-let maxAge;
-maxAge = 8723;
+    if(sure)
+    {
+        let totalRequired = (Number(numPerDay) * 365) * (Number(maxAge) - Number(age));
 
-let numPerDay;
-numPerDay = 1;
+        document.write("You will need " + totalRequired + " to last you until the ripe old age of " + maxAge);
 
-let totalRequired;
-totalRequired = (numPerDay * 365) * (maxAge - age);
+        alert(`You will need ${totalRequired} to last you until the ripe old age of ${maxAge}`);
 
-let outputDisplay = "You will need " + totalRequired + " cups of boba tea to last you until the ripe old age of " + maxAge + ".";
-document.write(result)
+        console.log("You will need " + totalRequired + " to last you until the ripe old age of " + maxAge);
+    }
+    else
+    {
+        window.alert("Please click run again");
+    }
