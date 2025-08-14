@@ -30,11 +30,11 @@
 
     <script>
         function findResult() {
-            const age = Number(document.getElementById("age").value);
-            const maxAge = Number(document.getElementById("maxAge").value);
-            const numPerDay = Number(document.getElementById("numPerDay").value);
+            let age = Number(document.getElementById("age").value);
+            let maxAge = Number(document.getElementById("maxAge").value);
+            let numPerDay = Number(document.getElementById("numPerDay").value);
 
-            const totalRequired = numPerDay * 365 * (maxAge - age);
+            let totalRequired = numPerDay * 365 * (maxAge - age);
 
             document.getElementById("result").innerText = "You will need " + totalRequired + " snacks to last you until the ripe old age of " + maxAge + ".";
 
