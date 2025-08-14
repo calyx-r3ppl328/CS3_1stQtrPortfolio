@@ -1,38 +1,43 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title>Snack Calculator</title>
 </head>
-    <body>
-        <h1>
-            Feed Me My Snacks
-        </h1>
-        <label>
-            Enter your age
-            <input id = "age" />
-        </label>
-    </br/>
+<body>
+    <h1>Feed Me My Snacks</h1>
 
-        <label>
-            Enter your Max age
-            <input id = "maxAge" />
-        </label>
-    </br/>
-    
-        <label>
-            Enter number of snacks
-            <input id = "numPerDay" />
-        </label>
-    </br/>
-    
-        <p>
-            Result:
-            <span id = "resultHere">
-            </span>
-        </p>
+    <label>
+        Enter your age:
+        <input id="age" type="number" />
+    </label>
+    <br/>
 
-        <button>
-            Accept Input
-        </button>
-    </body>
+    <label>
+        Enter your Max age:
+        <input id="maxAge" type="number" />
+    </label>
+    <br/>
+
+    <label>
+        Enter number of snacks per day:
+        <input id="numPerDay" type="number" />
+    </label>
+    <br/>
+
+    <button onclick="findResult()">Calculate</button>
+
+    <p>Result: <span id="result"></span></p>
+
+    <script>
+        function findResult() {
+            const age = Number(document.getElementById("age").value);
+            const maxAge = Number(document.getElementById("maxAge").value);
+            const numPerDay = Number(document.getElementById("numPerDay").value);
+
+            const totalRequired = numPerDay * 365 * (maxAge - age);
+
+            document.getElementById("result").innerText = totalRequired;
+        }
+    </script>
+</body>
 </html>
-
-<script src = "script 2.js">
-</script>
