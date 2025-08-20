@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2> Q1 3rd Graded Exercise submitted by Calyx Pierre Patron of 9Magnesium </h2>
+   
+    <p> Guess the number: **** </p>
+
+    <p> The number is from 1 to 100 </p>
+
+    <label>
+        Enter your guess :
+        <input id = "enterGuess"/>
+    </label>
+    <br/>
+
+    <button onclick="checkIt()"> Check It </button>
+
+    <p> Result: <span id="result"></span></p>
+
+    <script>
+
+        var dNumber = Math.floor(Math.random() * 100) + 1; // generates a number from 1  to 100 when the page loads
+
+        function checkIt() {
+            let guess = Number(document.getElementById("enterGuess").value);
+
+            if (guess == dNumber) {
+                let result = "You are correct!";
+            }
+            else {
+                if (guess > dNumber) {
+                    let result = "Lower";
+                }
+                else {
+                    let result = "Higher";
+                }
+            }
+            
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+
+</body>
+
+</html>
