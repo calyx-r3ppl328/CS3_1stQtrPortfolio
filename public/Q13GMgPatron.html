@@ -24,16 +24,17 @@
 
         function checkIt() {
             let guess = Number(document.getElementById("enterGuess").value);
+            let result = ""
 
             if (guess == dNumber) {
-                let result = "You are correct!";
+                result = "You are correct!";
             }
             else {
                 if (guess > dNumber) {
-                    let result = "Lower";
+                    result = "Lower";
                 }
                 else {
-                    let result = "Higher";
+                    result = "Higher";
                 }
             }
             
