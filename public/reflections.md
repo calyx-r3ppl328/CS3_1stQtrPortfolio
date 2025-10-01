@@ -7,7 +7,7 @@
 
 ## List at least 5 topics that you know and can describe but needs further practice/discussion and why. The why should be per topic listed.
 1. How to return outputs (document.write, return) - I encountered more ways on how to print outputs of programs. While I can use them relatively well, I would like more clarification on when to use the different functions to print.
-2. Number Properties - This was a new topic for me. I had a hard time remembering what exactly each function did (parseFloat, parseInt), though I managed to persevere.
+2. parse and math functions - This was a new topic for me. Normally, if I wanted to round or floor a number, I would've just made a function to do that. I had a hard time remembering what exactly each function did, though I managed to persevere.
 3. Switch - I have a hard time remembering the syntax of the switch case. I do understand how it works though and its basic essence. I simply prefer using the if statements.
 4. The concept of Java being dynamic - For example, how it can still "perform" normal arithmetic operations, even though a value is in quotation marks (i.e., 5 + '3' = 53). Considering the value in quotations isn't really considered a integer, I expected there to be an error, though in Java, it simply puts the numbers side by side.
 5. ++x and x++ - In C++ and Python, there was only method of increasing a value: x++ (pre-increment). In Java, however, we have ++x (post-increment). I normally get confused on which is which and how to use each.
